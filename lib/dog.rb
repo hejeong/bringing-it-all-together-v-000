@@ -64,7 +64,6 @@ class Dog
       Dog.new_from_db(row)
     else
       Dog.create(name: name, breed: breed)
-      
     end
   end
 
