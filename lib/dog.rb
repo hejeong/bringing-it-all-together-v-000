@@ -42,7 +42,6 @@ class Dog
         dog.send("#{attribute}=", value)
     end
     dog.save
-    self
   end
 
   def self.find_by_id(id)
