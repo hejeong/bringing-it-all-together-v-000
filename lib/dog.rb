@@ -50,8 +50,10 @@ class Dog
           WHERE id = ?
           SQL
     row = DB[:conn].execute(sql, id)
-    if !row.empty?
-      Dog.new(row[1], row[2], row[0])
-    end
+    Dog.new_from_db(row)
+  end
+
+  def self.new_from_db(row)
+    
   end
 end
