@@ -60,9 +60,9 @@ class Dog
           SQL
     row = DB[:conn].execute(sql, name, breed)
     if !row.empty?
-      
-    else 
-      Dog.create(name, breed)
+
+    else
+      Dog.create(name: name, breed: breed)
     end
   end
 
